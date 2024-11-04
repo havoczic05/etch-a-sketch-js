@@ -2,10 +2,12 @@ const container = document.querySelector(".container");
 const button = document.createElement("button");
 const gridInfo = document.createElement("h2");
 
+
 const gameInfoContainer = document.querySelector(".game-info");
 
 button.textContent = "New Grid";
 gameInfoContainer.appendChild(button);
+gameInfoContainer.appendChild(gridInfo);
 
 button.addEventListener("click", getNumberOfDivs);
 function insertXDivsInContainer(number) {
@@ -18,9 +20,8 @@ function insertXDivsInContainer(number) {
 }
 
 function changeGameInfo(number) {
-  const gridInfo = document.createElement("h2");
+const gridInfo = document.querySelector("h2");
   gridInfo.innerText = `${number} * ${number}`
-  gameInfoContainer.appendChild(gridInfo);
 
 }
 function getNumberOfDivs() {
