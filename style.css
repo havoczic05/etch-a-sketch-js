@@ -26,7 +26,6 @@ body {
 
     &:hover {
       cursor: pointer;
-      background-color: chartreuse;
     }
   }
 }
